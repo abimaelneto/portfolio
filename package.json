@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "style": "npx tailwindcss -i ./src/styles/global.css -o ./dist/output.css --watch"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",

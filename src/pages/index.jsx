@@ -7,13 +7,12 @@ import { Skills } from "@/sections/Home/Skills/index.jsx";
 import Gradient1 from "@/assets/vectors/gradient1.jsx";
 import { GradientSmall } from "@/assets/vectors/gradientSmall.jsx";
 import { Test } from "@/assets/vectors/test.jsx";
+import Link from "next/link";
 
-export default function Home() {
-  return (
-    <div className="flex flex-col">
-      <section className="flex w-screen bg-gray-100 justify-center align-center">
+
+{/* <section className="flex w-screen bg-gray-100 justify-center align-center">
         <h3>Habilities</h3>
-      </section>
+      </section> */}
       {/* <Experience /> */}
 
       {/* <div className=" h-96 bg-red-800 relative">
@@ -32,14 +31,16 @@ export default function Home() {
         </div>
       </div> */}
 
-      <Education />
-      <div className=" flex flex-col w-100 relative overflow-hidden">
-        {/* <Test className=" absolute" /> */}
-        {/* <GradientSmall className="absolute left-0 w-100" /> */}
+      {/* <Education /> */}
+      {/* <div className=" flex flex-col w-100 relative overflow-hidden">
         <Skills className="flex flex-col justify-center items-center bg-gradient-to-br from-primary  from-50% to-[140%] to-secondary-light" />
 
         <Skills className="flex flex-col justify-center items-center  bg-cover bg-right-bottom bg-[url('/gradient-1.svg')]" />
-      </div>
-    </div>
+      </div> */}
+
+
+export default function Home() {
+  return (
+      <div>hello</div>
   );
 }
