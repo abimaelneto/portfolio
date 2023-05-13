@@ -1,11 +1,19 @@
 import { Header } from "./Header/index.jsx";
 import { Footer } from "./Footer/index.jsx";
 import Link from "next/link.js";
+import { NavLink } from "./NavLink/index.jsx";
+
+const links = [
+  { link: "/experience", label: "Experience" },
+  { link: "/skills", label: "Skills" },
+  { link: "/formation", label: "Formation" },
+  { link: "/about", label: "About" },
+  { link: "/contact", label: "Contact" },
+];
 
 export const Layout = ({ children }) => {
   return (
     <div className="h-screen w-screen bg-gray-300 font-quatro overflow-y-scroll overflow-x-hidden">
-      <Header />
       <div className="grid grid-cols-3 h-full bg-gradient-to-br from-primary  from-20% to-[140%] to-secondary-light text-white">
         <div className="absolute w-screen h-screen bg-transparent  backdrop-blur-sm "></div>
         <div className="col-span-2  z-10 flex flex-col ml-24 h-screen justify-start pt-4">
@@ -17,24 +25,15 @@ export const Layout = ({ children }) => {
               Software Developer
             </h3>
           </div>
-          <div className="h-[80%]">{children}</div>
+          <div className="h-[80%] overflow-hidden">{children}</div>
         </div>
 
         <div className="flex relative flex-col h-full justify-end text-4xl font-gruppo">
-          <div className="absolute w-full h-full bg-[url('/abima.png')] bg-cover bg-blend-luminosity bg-primary-light "></div>
-          <div className=" z-10  mb-40 text-4xl font-gruppo ">
-            <Link href="/skills">
-              <p className="hover:text-secondary-light">Skills</p>
-            </Link>
-            <Link href="/formation">
-              <p className="hover:text-secondary-light">Formation</p>
-            </Link>
-            <Link href="/about">
-              <p className="hover:text-secondary-light">About</p>
-            </Link>
-            <Link href="/contact">
-              <p className="hover:text-secondary-light">Contact</p>
-            </Link>
+          <div className="absolute w-full h-full bg-[url('/abima.png')] bg-cover  "></div>
+          <div className=" z-10  pb-40 text-4xl font-gruppo backdrop-blur-sm  h-screen flex flex-col justify-end pl-8">
+            {links.map((l) => (
+              <NavLink {...l} />
+            ))}
           </div>
         </div>
       </div>

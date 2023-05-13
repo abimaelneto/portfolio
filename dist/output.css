@@ -568,10 +568,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mb-40 {
-  margin-bottom: 10rem;
-}
-
 .ml-24 {
   margin-left: 6rem;
 }
@@ -797,6 +793,14 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.pb-40 {
+  padding-bottom: 10rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -895,8 +899,8 @@ video {
   opacity: 0.2;
 }
 
-.bg-blend-luminosity {
-  background-blend-mode: luminosity;
+.bg-blend-hue {
+  background-blend-mode: hue;
 }
 
 .shadow-sm {

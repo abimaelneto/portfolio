@@ -1,5 +1,7 @@
-const Formation = () => {
-    return <></>
-}
+import { Formation } from "@/components/Formation";
 
-export default Formation
+const FormationPage = () => {
+  return <Formation></Formation>;
+};
+
+export default FormationPage;

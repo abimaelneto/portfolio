@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-
 module.exports = {
   mode: "jit",
-  content: ["./public/**/*.html", "./src/**/*.{js,jsx}"],
+  content: [
+    "./index.html",
+    "./public/**/*.html",
+    "./src/**/*.{js,jsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/layouts/**/*.{js,ts,jsx,tsx}",
+  ],
   presets: [],
 
   darkMode: "media", // or 'class'
@@ -165,11 +171,11 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
-      "primary": {
+      primary: {
         light: "#8c397d",
         DEFAULT: "#632d61",
       },
-      "secondary": {
+      secondary: {
         light: "#ffde90",
         DEFAULT: "#e2a71d",
       },
