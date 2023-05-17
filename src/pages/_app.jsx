@@ -1,6 +1,6 @@
 // pages/_app.js
 // import { Gruppo, Monoton, Days_One } from "next/font/google";
-import "../../public/dist/output.css";
+// import "../../public/dist/output.css";
 import "../styles/fonts.css";
 import "../styles/global.css";
 
