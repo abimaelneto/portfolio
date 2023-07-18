@@ -5,3 +5,20 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: grey;
+  width: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+}
